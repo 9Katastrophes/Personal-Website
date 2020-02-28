@@ -1,12 +1,21 @@
+.profile_picture {
+    padding: 20px 20px;
+    float: left;
+}
+
 .cat {
     text-align: center;
     width: 500px;
 }
 
 .content {
-    width: 65%;
-    margin-left: 17.5%;
-    text-align: center;
+    width: 80%;
+    margin-left: 9.5%;
+}
+
+.info {
+    margin-top: 40px;
+    margin-left: 90%px;
 }
 
 .nav_bar {
@@ -19,17 +28,17 @@
     top: 0;
 }
 
-    .nav_bar > .element {
-        width: 19.5%;
-        line-height: 50px;
-        text-align: center;
-        color: white;
-        display: inline-block;
-        margin: 0;
-        font-family: Arial;
-        text-decoration: none;
-    }
+.nav_bar > .element {
+    width: 19.5%;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    font-family: Arial;
+    text-decoration: none;
+}
 
-        .nav_bar > .element:hover {
-            text-decoration: underline;
-        }
+.nav_bar > .element:hover {
+    text-decoration: underline;
+}
