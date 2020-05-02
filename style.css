@@ -2,7 +2,12 @@
     /* colors */
     --coral: #f26a55;
     --pastel-pink: #ffe8ed;
+    --red: #bf1b1b;
+    --font: fantasy;
 }
+
+.js body { display: none; }
+
 .nav_bar {
     width: 100%;
     height: 50px;
@@ -11,8 +16,8 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    font-family: var(--font);
 }
-
 .nav_bar > .element {
     width: 19.5%;
     line-height: 50px;
@@ -20,12 +25,13 @@
     color: white;
     display: inline-block;
     margin: 0;
-    font-family: Arial;
     text-decoration: none;
 }
-
 .nav_bar > .element:hover {
-    text-decoration: underline;
+    color: var(--red);
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
 }
 
 .profile_picture {
@@ -36,8 +42,8 @@
 .content {
     width: 80%;
     margin-left: 9.5%;
+    font-family: var(--font);
 }
-
 .content > p {
     font-size: 18px;
     line-height: 30px;
@@ -45,14 +51,63 @@
 
 .info {
     margin-top: 40px;
+    font-family: var(--font);
+}
+
+.projects {
+    width: 90%;
+    margin-left: 4.5%;
+    background-color: var(--coral);
+    font-family: var(--font);
+}
+.projects > .element {
+    width: 90%;
+    padding: 4.5%;
+}
+.projects > .element > .picture {
+    float: left;
+    width: 350px;
+    height: 200px;
+}
+.projects > .element > h2 {
+    color: white;
+    padding-left: 400px;
+}
+.projects > .element > p {
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    padding-left: 400px;
+}
+
+.experiences {
+    width: 90%;
+    margin-left: 4.5%;
+    background-color: var(--coral);
+    font-family: var(--font);
+}
+.experiences > .element {
+    width: 95%;
+    padding: 2%;
+}
+.experiences > .element > h2 {
+    color: white;
+}
+.experiences > .element > p {
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
 }
 
 .linkedin {
     max-width: 2%;
     height: auto;
 }
-
 .github {
+    max-width: 2%;
+    height: auto;
+}
+.facebook {
     max-width: 2%;
     height: auto;
 }
